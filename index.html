@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcuticon" href="img/caballito.svg">
+    <title>Gran Carrera de Caballos</title>
+    <style>
+        #myContainer1 {
+            width: 1300px;
+            height: 275px;
+            position: relative;
+            background-image: url("img/pista.jpg");
+            background-color: black;
+        }
+
+        #animacion1 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+
+        }
+
+        #animacion2 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: blue;
+
+        }
+
+        #animacion3 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: green;
+
+        }
+
+        #image {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<center><h1>Gran Carrera de Caballos</h1></center>
+    <p>
+        <table>
+            <tr>
+                <td><button id="jugador1" onclick="reproducirAudio()">Jugador1</button></td>
+                <td> </td>
+                <td><button id="jugador2">Jugador2</button></td>
+                <td> </td>
+                <td><button id="jugador3">Jugador3</button></td>
+                <td> </td>
+            </tr>
+        </table>
+    </p>
+
+    <div id="myContainer1">
+        <br>
+        <div id="animacion1">
+            <img src="img/caballo.gif" alt="" id="image">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="animacion2">
+            <img src="img/caballo.gif" alt="" id="image">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="animacion3">
+            <img src="img/caballo.gif" alt="" id="image">
+        </div>
+    </div>
+
+    <audio id="miAudio">
+        <source src="audio/caballo.ogg" type="audio/ogg">
+    </audio>
+</body>
+
+<script src="js/caballos.js">
+</script>
+
+</html>
