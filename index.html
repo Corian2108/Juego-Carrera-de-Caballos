@@ -5,93 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcuticon" href="img/caballito.svg">
-    <title>Gran Carrera de Caballos</title>
-    <style>
-        #myContainer1 {
-            width: 1300px;
-            height: 275px;
-            position: relative;
-            background-image: url("img/pista.jpg");
-            background-color: black;
-        }
-
-        #animacion1 {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            background-color: red;
-
-        }
-
-        #animacion2 {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            background-color: blue;
-
-        }
-
-        #animacion3 {
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            background-color: green;
-
-        }
-
-        #image {
-            width: 50px;
-            height: 50px;
-        }
-    </style>
-
-</head>
-
-<body>
-<center><h1>Gran Carrera de Caballos</h1></center>
-    <p>
-        <table>
-            <tr>
-                <td><button id="jugador1" onclick="reproducirAudio()">Jugador1</button></td>
-                <td> </td>
-                <td><button id="jugador2">Jugador2</button></td>
-                <td> </td>
-                <td><button id="jugador3">Jugador3</button></td>
-                <td> </td>
-            </tr>
-        </table>
-    </p>
-
-    <div id="myContainer1">
-        <br>
-        <div id="animacion1">
-            <img src="img/caballo.gif" alt="" id="image">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="animacion2">
-            <img src="img/caballo.gif" alt="" id="image">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="animacion3">
-            <img src="img/caballo.gif" alt="" id="image">
-        </div>
-    </div>
-
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.css">
     <audio id="miAudio">
         <source src="audio/caballo.ogg" type="audio/ogg">
     </audio>
+    <title>Gran Carrera de Caballos</title>
+</head>
+
+<body>
+    <div id="inicio">
+        <h1 id="titulo1">
+            Gran Carrera De Caballos
+        </h1>
+        <div id="contenedorInicio">
+            <div id="animacionInicio">
+                <img src="img/presentación.jpg" id="presentacion">
+            </div>
+        </div>
+    </div>
+    <div id="seleccionaModo">
+        <h1 id="titulo1">
+            Gran Carrera De Caballos
+        </h1>
+        <img src="img/presentación.jpg" id="presentacion">
+        <button class="boton1" id="unJugador">Un Jugador</button>
+        <button class="boton1" id="dosJugadores">Dos Jugadores</button>
+    </div>
+    <div id="carrera">
+        <center>
+            <h1>Gran Carrera de Caballos</h1>
+
+            <p>
+                <table>
+                    <tr>
+                        <td><button id="jugador1">Jugador1</button></td>
+                        <td> </td>
+                        <td><button id="jugador2">Jugador2</button></td>
+                        <td> </td>
+                        <td><button id="jugador3">Jugador3</button></td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </p>
+
+            <div id="miContenedor1">
+                <br>
+                <div id="animacion1">
+                    <img src="img/caballo.gif" alt="" id="image">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="animacion2">
+                    <img src="img/caballo.gif" alt="" id="image">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="animacion3">
+                    <img src="img/caballo.gif" alt="" id="image">
+                </div>
+            </div>
+        </center>
+    </div>
+
 </body>
 
-<script src="js/caballos.js">
-</script>
+<script src="js/caballos.js"></script>
+<script src="js/main.js"></script>
 
 </html>
